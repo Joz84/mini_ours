@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20170608094528) do
 
   create_table "course_consultations", force: :cascade do |t|
     t.integer  "inscription_id"
-    t.integer  "moodle_scorm"
+    t.integer  "moodle_scorm_id"
     t.string   "state"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.index ["inscription_id"], name: "index_course_consultations_on_inscription_id", using: :btree
   end
 
